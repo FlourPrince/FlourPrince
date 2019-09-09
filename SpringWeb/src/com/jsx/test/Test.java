@@ -18,17 +18,18 @@ public class Test {
         System.out.println("111111");
         System.out.println(Arrays.toString(ctx.getBeanDefinitionNames()));
 		 UserService us =(UserService) ctx.getBean("userService");
+		
+		  User user= new User();
+		  user.setUsername("å¼ ä¸‰");
+		  user.setPassword("1111");
+		  user= us.login(user);
+		  System.out.println(user.getXuhao()); 
+		  System.out.println("333");
+		 
 		/*
-		 * User user= new User(); user.setUsername("ÀîËÄ");
-		 * user.setPassword("1111"); user= us.login(user);
-		 * System.out.println(user.getXuhao()); System.out.println("333");
+		 * User user= new User(); user.setPassword("11111");
+		 * user.setUsername("ï¿½ï¿½ï¿½ï¿½"); System.out.println("222222"); Boolean b=
+		 * us.register(user); System.out.println(b); System.out.println("333");
 		 */
-			   User user= new User();
-			 user.setPassword("11111");
-			 user.setUsername("ÕÔËÄ");
-		        System.out.println("222222");
-			 Boolean b= us.register(user);
-			 System.out.println(b);
-			   System.out.println("333");
 	}
 }
