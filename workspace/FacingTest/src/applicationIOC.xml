@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="
+    http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+    http://www.sprinframework.org/schema/core  http://www.springframework.org/schema/context/spring-core.xsd">
+        <bean id="testSpringIoc01" class="SpringIoc.TestSpringIoc01"></bean>
+       <!-- bean的实例化方式 -->
+       <!-- 默认无参构造 <bean id="testSpringIoc01"  class="" ></bean> -->
+       <!--静态工厂 <bean id="" class=""  factory-method=""></bean> -->
+       <!--实例工厂 <bean id="" class="" factory-bean="" factory-method=""></bean> -->
+       
+       <!-- 属性注入 -->
+       <!-- 1.有参注入 -->
+      <!--  <bean id="" class="">
+           <constructor-arg name="" value=""> </constructor-arg>
+        </bean> -->
+        <!-- 2.set方法注入 -->
+      <!--    <bean id="" class=""> 
+             <property name="" value=""> </property>
+         </bean> -->
+         <!-- 注入对象类型的属性 -->
+        <!--    <bean id="" class=""> </bean>
+           <bean id="" class="">
+              <property name="" ref=""> </property>
+            </bean> -->
+           </beans>

@@ -11,7 +11,6 @@ import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-import com.mysql.cj.jdbc.SuspendableXAConnection;
 
 public class JabberServer {
 	//¶¨Òå¶Ë¿Ú
