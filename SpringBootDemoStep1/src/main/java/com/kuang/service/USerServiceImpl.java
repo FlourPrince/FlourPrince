@@ -1,6 +1,7 @@
 package com.kuang.service;
 import java.util.List;
 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,9 +12,13 @@ public class USerServiceImpl implements UserService {
 	@Autowired
     UserMapper userMapper;
 
-    @Override
-    public List<User> getUser(int xuhao) {
+    public User getUser(int xuhao) {
         return userMapper.getUser(xuhao);
+    }
+    
+    
+    public List<User> getUserAll() {
+        return userMapper.getUserAll();
     }
     
 }

@@ -16,6 +16,14 @@ public interface UserMapper {
      * @return
      */
     @Select("SELECT * FROM User WHERE xuhao=#{xuhao}")
-    public List<User> getUser(int xuhao);
+    public User getUser(int xuhao);
+    
+    /**
+     * 查询所有
+     * @param xuhao
+     * @return
+     */
+    @Select("SELECT * FROM User")
+    public List<User> getUserAll();
 
 }

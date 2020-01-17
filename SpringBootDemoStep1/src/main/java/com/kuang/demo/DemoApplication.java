@@ -12,7 +12,7 @@ import org.springframework.context.annotation.ComponentScan;
  */
 @SpringBootApplication
 @EnableAutoConfiguration
-@ComponentScan(basePackages = {"com.kuang.controller","com.kuang.service"})
+@ComponentScan(basePackages = {"com.kuang.*","com.kuang.*"})
 @MapperScan(basePackages = "com.kuang.dao")
 public class DemoApplication {
 
